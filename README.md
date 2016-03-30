@@ -1,8 +1,14 @@
-<<<<<<< HEAD
-# bot-charlie
 
-TODO.
-=======
 # bot-yearbook
-Superlatives slack bot.
->>>>>>> dad47ced8f5a301e0341854787ca166c7a479608
+
+> Superlatives slack bot.
+
+https://paper.dropbox.com/doc/Senior-Superlatives-Name-TBD-eEmoBWix7o2JwQ4ktV9v5
+
+## Development
+
+Run `make`.
+
+Go to localhost:3000/login
+
+Add to your Slack team.
