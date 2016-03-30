@@ -80,10 +80,10 @@ controller.on('rtm_close', bot.rtmClose);
 controller.storage.teams.all(bot.connectAll);
 
 /**
- * Listens for new messages.
+ * Listens for ambient messages.
  */
 
-controller.on('message', update.newMessage);
+controller.on('ambient', update.newMessage);
 
 /**
  * Listens for new reactions.
