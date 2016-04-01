@@ -1,5 +1,5 @@
-name:
-  - description:
+name: "GOAT award"
+  - description: "This is the description"
     criteria:
       - emojis:
         words:
