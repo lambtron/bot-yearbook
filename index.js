@@ -9,8 +9,9 @@ var update = require('./lib/update');
 var Botkit = require('botkit');
 var bot = require('./lib/bot');
 var fmt = require('node-fmt');
-var url = require('url');
 var _ = require('lodash');
+var url = require('url');
+var co = require('co');
 
 /**
  * Assign environmental variables.
@@ -83,10 +84,10 @@ controller.storage.teams.all(bot.connectAll);
  * Listens for ambient messages.
  */
 
-controller.on('ambient', update.newMessage);
+controller.on('ambient', co.wrap(update.newMessage));
 
 /**
  * Listens for new reactions.
  */
 
-controller.on('reaction_added', update.newReaction);
+controller.on('reaction_added', co.wrap(update.newReaction));
