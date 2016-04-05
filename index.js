@@ -96,4 +96,4 @@ controller.on('reaction_added', co.wrap(update.newReaction));
 * Is summoned when a user mentions the bot and says leaderboard
 */
 
-controller.on('direct_mention', co.wrap(update.dailyLeaderboard));
+controller.on('direct_mention', co.wrap(update.roundUp));

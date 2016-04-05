@@ -21,6 +21,7 @@
     "mongodb": "^1.4.40",
     "monk": "^1.0.1",
     "node-fmt": "^1.0.3",
-    "thunkify-wrap": "^1.0.4"
+    "thunkify-wrap": "^1.0.4",
+    "node-debug": "*"
   }
 }

@@ -4,6 +4,7 @@
 #
 
 nodemon = ./node_modules/.bin/nodemon --harmony --quiet
+#node-debug = ./node_modules/node-debug/bin/node-debug.js
 
 #
 # Default.
@@ -21,7 +22,9 @@ clean:
 
 # Run the server in debug mode.
 debug: node_modules
-	@node --harmony debug index.js --development
+	@node debug --harmony index.js
+
+	
 
 # Run the server.
 run: node_modules
