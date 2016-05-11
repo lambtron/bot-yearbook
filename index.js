@@ -6,6 +6,7 @@
 var thunkify = require('./lib/util').thunkify;
 var storage = require('./lib/storage');
 var update = require('./lib/update');
+var chat = require('./lib/chat');
 var Botkit = require('botkit');
 var bot = require('./lib/bot');
 var fmt = require('node-fmt');
@@ -96,4 +97,4 @@ controller.on('reaction_added', co.wrap(update.newReaction));
 * Is summoned when a user mentions the bot and says leaderboard
 */
 
-controller.on('direct_mention', co.wrap(update.roundUp));
+controller.on('direct_mention', co.wrap(chat.roundUp));
